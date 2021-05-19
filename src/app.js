@@ -32,14 +32,14 @@ app.get('', (req, res) => {
     res.render('index', {
         title: "Weather App",
         City: "Jhanxi",
-        name:"Sambhav Jain"
+        //name:"Sambhav Jain"
     })
 })
 app.get('/about', (req, res) => {
     res.render('about', {
         title: "About Me",
         city: "Jhansi",
-        name:"Sambhav Jain"
+       // name:"Sambhav Jain"
 
     })
 })
@@ -48,7 +48,7 @@ app.get('/help', (req, res) => {
     res.render('help', {
         title: "Help Page",
         city: "Jhansi",
-        name:"Sambhav Jain"
+        //name:"Sambhav Jain"
 
     })
 })
@@ -107,14 +107,14 @@ app.get('/products',(req,res)=>{
 app.get('/help/*',(req,res)=>{
     res.render('404',{
         errormessage:"Help Package Not Found",
-        name:"Sambhav Jain"
+        //name:"Sambhav Jain"
     })
 })
 
 app.get('*', (req, res) => {
    res.render('404',{
        errormessage:"404 Not Found",
-       name:"Sambhav Jain"
+       //name:"Sambhav Jain"
    })    //* is wild card character .on giving different url on browser,it will be compared with other route 
 })
 
